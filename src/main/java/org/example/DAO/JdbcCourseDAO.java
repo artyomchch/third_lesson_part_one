@@ -23,7 +23,7 @@ class CourseRowMapper implements RowMapper<Course>
 
 public class JdbcCourseDAO implements CourseDAO {
 	private static final String SQL_SELECT_COURSE =
-			 "SELECT id, title, length, description FROM web.courses";
+			 "SELECT id, title, length, description FROM courses";
 	private static final String SQL_SELECT_COURSE_BY_ID =
 			SQL_SELECT_COURSE+" WHERE id = ?";
 	private static final String SQL_SELECT_COURSE_BY_TITLE =
